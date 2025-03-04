@@ -1,0 +1,102 @@
+* {
+  box-sizing: border-box;
+}
+
+.divider {
+  height: 20px;
+  width: 1px;
+  border-right: 1px solid gray;
+}
+
+body {
+  background-color: #fffbf3;
+  font-family: "Inter";
+  margin: 0;
+}
+
+header {
+  background-color: black;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 20px;
+  .header-left {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 1em;
+    a {
+      color: white;
+      font-weight: 400;
+      text-decoration: none;
+    }
+  }
+}
+
+nav ul {
+  display: flex;
+  list-style: none;
+  position: unset;
+  gap: 1em;
+  height: auto;
+  width: auto;
+
+  li {
+    a {
+      text-decoration: none;
+      color: white;
+    }
+  }
+}
+
+.banner {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  align-content: center;
+  height: 230px;
+  background: linear-gradient(90deg, #1cb5e0 0%, #000851 100%);
+  h1 {
+    font-weight: bold;
+    color: white;
+    text-align: center;
+  }
+}
+
+.container {
+  display: flex;
+  flex-wrap: wrap;
+  flex-direction: row;
+  align-content: flex-start;
+  margin-top: 0;
+}
+
+.box {
+  margin-top: 0;
+  flex: 1;
+  padding: 5px;
+  height: 500px;
+  text-align: center;
+  border-left: 1px solid gray;
+  border-bottom: 1px solid gray;
+
+  &:nth-child(1) {
+    flex: 0.7;
+  }
+  &:nth-child(2) {
+    flex: 1.1;
+  }
+  &:nth-child(3) {
+    flex: 1.1;
+  }
+}
+
+.projects-name {
+  text-align: left;
+  padding-left: 10px;
+}
+
+.education-name {
+  text-align: center;
+  padding-right: 10px;
+}
